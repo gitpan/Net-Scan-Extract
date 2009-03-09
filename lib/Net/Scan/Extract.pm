@@ -17,7 +17,7 @@ our %EXPORT_TAGS = (
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 $VERSION = eval $VERSION;
 
 $|=1;
@@ -100,7 +100,7 @@ sub Extract_Html_Links{
 	return @res;
 }
 
-sub Extract_Html_ Script{
+sub Extract_Html_Script{
 	my @data = @_;
 	my $data = join(" ",@data);
 	$data =~ s/\n|\r|<br>|\s\s|\t//ig;
@@ -190,7 +190,7 @@ __END__
 
 =head1 NAME
 
-Net::Scan::Extract - This module allows to extract stuff from text. 
+Net::Scan::Extract - Perl module to extract stuff from text. 
 
 =head1 SYNOPSIS
 
@@ -244,11 +244,12 @@ Net::Scan::Extract - This module allows to extract stuff from text.
 
 =head1 DESCRIPTION
 
-Net::Scan::Extract - allows to extract stuff from text.
+Net::Scan::Extract - Perl module to extract stuff from text.
 
 This module allows to extract email address, html comment, html form, html hidden form field, html links, html title, ip address, phone number and html script from text.
 
 Every function returns an array with data extracted like in the example above.
+
 Note: using Extract_Phone function you must specify a phone mask. e.g. x-xxx-xxx-xxxx
 
 =head1 SEE ALSO
@@ -267,4 +268,4 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.8.8 or,
 at your option, any later version of Perl 5 you may have available.
 
-cut
+=cut

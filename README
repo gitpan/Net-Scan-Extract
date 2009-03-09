@@ -1,7 +1,7 @@
-Net-Scan-Extract version 0.01
+Net-Scan-Extract version 0.02
 =============================
 
-This module allows to extract stuff from text.
+Perl module to extract stuff from text.
 
 . email address
 . html comment

@@ -1,4 +1,7 @@
 Revision history for Perl extension Net::Scan::Extract.
 
+0.02  Mon Mar  9 13:52:25 2009
+	- fix documentation
+
 0.01  Mon Mar  4 12:05:25 2009
 	- first release
