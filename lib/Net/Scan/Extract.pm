@@ -17,7 +17,7 @@ our %EXPORT_TAGS = (
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 $VERSION = eval $VERSION;
 
 $|=1;
@@ -228,7 +228,7 @@ Net::Scan::Extract - Perl module to extract stuff from text.
   print "\nIp Address :\n";
   print "$_\n" for @res;
 
-  @res = Extract_Script(@text);
+  @res = Extract_Html_Script(@text);
   print "\nHtml Script :\n";
   print "$_\n" for @res;
 
